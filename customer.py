@@ -7,7 +7,7 @@ class Customer:
         __address (str): Shipping address for deliveries
         __phone (str): Contact phone number """
 
-    def __init__(self, customer_id, name, email, address, phone):
+    def __init__(self, customer_id, name, email, address, phone): # Creates a new customer with their ID, name, email, address, and phone number
         self.__customer_id = customer_id
         self.__name = name
         self.__email = email
@@ -31,16 +31,16 @@ class Customer:
         return self.__phone
 
 
-    def set_name(self, name):
+    def set_name(self, name): # Updates the customer's name
         self.__name = name
     
-    def set_email(self, email):
+    def set_email(self, email): # Updates the customer's email address
         self.__email = email
     
-    def set_address(self, address):
+    def set_address(self, address): # Updates the customer's address
         self.__address = address
     
-    def set_phone(self, phone):
+    def set_phone(self, phone): # Updates the customer's phone number
         self.__phone = phone
     
     # Example Stub Method

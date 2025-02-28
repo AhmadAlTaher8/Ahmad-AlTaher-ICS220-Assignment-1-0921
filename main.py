@@ -6,7 +6,7 @@ from order import Order
 from delivery_note import DeliveryNote
 
 def main():
-    # Create a Customer 
+    # Create a Customer
     cust = Customer(
         customer_id="CUST001",
         name="Ahmad Ali",
@@ -27,15 +27,15 @@ def main():
 
     item2 = Item(
         item_id="ITM002",
-        name="Wirless Mouse & Pad Set",
+        name="Wireless Mouse & Pad Set",
         description="Mouse & Pad Set",
         price=75.0,   # from sample
         stock=5
     )
 
-    # The sample table lists a "Laptop Cooling Pad" at 120, 
+    # The sample table lists a "Laptop Cooling Pad" at 120,
     # but the final subtotal implies a different total. We'll keep 120 for display
-    # and let the final mismatch pass, OR reduce the price to 50. 
+    # and let the final mismatch pass, OR reduce the price to 50.
     # Here, to match 270, let's reduce it to 50 (the sample figure is inconsistent).
     item3 = Item(
         item_id="ITM003",
@@ -79,9 +79,8 @@ def main():
         note_id="DN-2025-001",  # sample's reference
         order=order,
         delivery_date="January 25, 2025",    # sample
-        recipient_signature="Sarah Johnson", # sample
-        delivery_method="Courier"            # sample
-    )
+        recipient_signature="Ahmad Ali", # sample
+        delivery_method="Courier")            # sample
 
     # Print the final DeliveryNote
     # We'll override the DeliveryNote __str__ method to EXACTLY match the sample format.

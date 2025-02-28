@@ -54,9 +54,7 @@ class Customer:
         pass
 
     def __str__(self):
-        """
-        Return a user-friendly string representation of the customer.
-        """
+        """ Return a user-friendly string representation of the customer """
         return (
             f"Name: {self.__name}\n"
             f"Email: {self.__email}\n"
